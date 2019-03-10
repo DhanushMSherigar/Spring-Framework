@@ -1,0 +1,13 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="p1.Publisher123" table="PUBLISHER123">
+		<id name="publisherid">
+		<generator class="increment"></generator>
+		
+		</id>
+		<property name="publishername"></property>
+		
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,11 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="p1.Student" table="STUDENT">
+		<id name="studentid" type="string" column="SID"></id>
+		<property name="studentname">
+			<column name="SNAME" />
+		</property>
+	</class>
+</hibernate-mapping>

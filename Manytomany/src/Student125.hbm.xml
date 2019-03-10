@@ -1,0 +1,16 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="p1.Student125" table="STUDENT125">
+		<id name="studentid">
+		<generator class="increment"></generator>
+		
+		</id>
+		<property name="studentname"></property>
+		<set name="course" table="student_course99" cascade="all">
+		<key column="studentid"></key>
+	<many-to-many  column="courseid" class="p1.Course125"></many-to-many>
+</set>
+	</class>
+</hibernate-mapping>
